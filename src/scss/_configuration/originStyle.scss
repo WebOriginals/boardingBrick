@@ -1,0 +1,93 @@
+//<Разметка текста>====================================================================================================
+.offer {
+  @include adaptiveValue(font-size,60, 49);
+  font-weight: 500;
+}
+
+.title{
+
+}
+
+.h1,h1 {
+  @include adaptiveValue(font-size,60, 30);
+  font-weight: 500;
+
+}
+
+.h2,h2{
+  @include adaptiveValue(font-size,36, 24);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.h3,h3{
+  @include adaptiveValue(font-size,24, 20);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.h4,h4{
+  @include adaptiveValue(font-size,24, 24);
+  font-weight: 700;
+}
+
+.h5,h5{
+  @include adaptiveValue(font-size,20, 20);
+  font-weight: 700;
+}
+
+.h6,h6{
+  @include adaptiveValue(font-size,14, 14);
+  font-weight: 700;
+}
+
+q{
+
+}
+
+
+
+//Стилизация кнопок
+.button-g{
+  background: $color_3;
+  color: $color_1;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  cursor: pointer;
+  transition: .5s;
+  @include adaptiveValue(font-size,16, 14);
+  font-weight: 700;
+  border: 1px solid $color_3;
+  text-transform: uppercase;
+
+
+  @media (any-hover: hover) {
+    &:hover {
+      background: $color_4;
+      color: $color_3;
+    }
+  }
+  &:focus{
+    background: $color_4;
+    color: $color_3;
+  }
+
+}
+
+
+
+
+
+//Стилизация input
+
+.input{
+  background: #FFFFFF;
+  border: 1px solid #414042;
+  box-sizing: border-box;
+  border-radius: 0;
+  padding: em(16) em(20);
+}
